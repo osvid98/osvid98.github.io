@@ -1,6 +1,6 @@
 /** Selectores **/
 :root{
-    --primario: #0f1ffdd5;
+    --primario: #0011ffc0;
     --blanco: #ffffff;
     --negro: #000000;
     --gris: #e1e1e1;
@@ -84,6 +84,13 @@ hr{
 }
 .justificar-texto {
     text-align: justify;
+}
+.parrafo-color {
+    color: var(--primario);
+    font-weight: bold;
+}
+.parrafo-negritas {
+    font-weight: bold;
 }
 
 
@@ -184,11 +191,31 @@ hr{
 
 
 /** Lenguajes **/
-@media (min-width: 768px) {
+@media (min-width: 1000px) {
     .contenedor-lenguajes {
         display: grid;
         grid-template-columns: repeat(3, 1fr); /* Divide en tres columnas iguales */
         gap: 8rem; /* Espacio entre las columnas */
+    }
+    .columna-lenguajes {
+        padding: 4rem 0;
+        text-align: center;
+        position: relative; /* Necesario para posicionar el pseudo-elemento */
+    }
+}
+@media (min-width: 1200px) {
+    .columna-lenguajes::before {
+        content: "";
+        height: 80%;
+        position: absolute;
+        top: 10%;
+        bottom: 0;
+        left: 112%; /* Posicionamos la barra en la mitad de la columna */
+        border-left: 1px solid #000000; /* Estilo de la barra vertical */
+    }
+    /* Estilo para eliminar la barra vertical de la última columna */
+    .columna-lenguajes:last-child::before {
+        border-left: none;
     }
 }
 .contenedor-lenguajes {
@@ -219,4 +246,9 @@ hr{
 .contenedor-circulo img {
     max-width: 75%;
     max-height: 75%;
+}
+
+.separador-texto {
+    margin: 0;
+    padding: 0;
 }
