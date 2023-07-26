@@ -92,6 +92,9 @@ hr{
 .parrafo-negritas {
     font-weight: bold;
 }
+.texto-blanco {
+    color: var(--blanco);
+}
 
 
 
@@ -108,8 +111,8 @@ hr{
     }
 }
 .header {
-    background-image: linear-gradient(#0f1ffdd5, rgba(255, 255, 255, 1)), url('/img/banner-header.avif');
-    height: 125rem; /* Anchura degradao */
+    background-image: linear-gradient(#0f4afda3, rgb(0, 0, 0)), url('/img/banner-header.avif');
+    height: 110rem; /* Anchura degradao */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -165,6 +168,51 @@ hr{
     color: var(--blanco);
 }
 
+/** Mis proyectos **/
+.proyectos-bg {
+    position: relative;
+    z-index: 2;
+    background-color: var(--blanco);
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+}
+
+.entrada-blog a {
+    display: inline-block;
+    background-color: #2196F3;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.entrada-blog img {
+    max-width: 80%;
+    border-radius: 0%;
+}
+
+@media (min-width: 768px) {
+    .dos-columnas {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+    }
+}
+
+/** Experiencia **/
+.experiencia-bg {
+    background-image: linear-gradient(#0f4afda3, #0f4afda3), url('/img/intro-bg.png');;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding-bottom: 30rem;
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
 
 /** ACERCA DE MI **/
 @media (min-width: 768px) {
@@ -193,6 +241,13 @@ hr{
 /** Lenguajes **/
 @media (min-width: 1000px) {
     .contenedor-lenguajes {
+        background-color: var(--blanco);
+        padding: 0 3rem;
+        margin-top: 35rem;
+        border-radius: 3rem; /* Ajusta el valor para cambiar la cantidad de redondeo */
+        box-shadow: 10px 10px 24px -14px rgba(0,0,0,0.75);
+        -webkit-box-shadow: 10px 10px 24px -14px rgba(0,0,0,0.75);
+        -moz-box-shadow: 10px 10px 24px -14px rgba(0,0,0,0.75);
         display: grid;
         grid-template-columns: repeat(3, 1fr); /* Divide en tres columnas iguales */
         gap: 8rem; /* Espacio entre las columnas */
@@ -211,7 +266,7 @@ hr{
         top: 10%;
         bottom: 0;
         left: 112%; /* Posicionamos la barra en la mitad de la columna */
-        border-left: 1px solid #000000; /* Estilo de la barra vertical */
+        border-left: 1px solid #00000018; /* Estilo de la barra vertical */
     }
     /* Estilo para eliminar la barra vertical de la última columna */
     .columna-lenguajes:last-child::before {
