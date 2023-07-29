@@ -33,6 +33,11 @@ body{
     width: 80%;
     margin: 0 auto;
 }
+.contenedor-mini{
+    max-width: 100rem;
+    width: 80%;
+    margin: 0 auto;
+}
 a{
     text-decoration: none;
 }
@@ -67,6 +72,10 @@ img{
     border-radius: 50%;
 }
 .acercademi-texto span{
+    font-weight: bold;
+    color: var(--secundario);
+}
+.experiencia-bg span{
     font-weight: bold;
     color: var(--secundario);
 }
@@ -273,7 +282,10 @@ hr{
 .proyectos-bg {
     position: relative;
     z-index: 2;
-    background-color: var(--blanco);
+    background-image: url('/img/Curve_Line.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
     padding-top: 2rem;
     padding-bottom: 10rem;
 }
@@ -283,27 +295,12 @@ hr{
     padding-bottom: 2rem;
 }
 
-.boton-web {
-    display: inline-block;
-    background-color: var(--primario);
-    color: white;
-    padding: 10px 20px;
-    margin-bottom: 1rem;
-    text-decoration: none;
-    font-weight: bold;
-    text-transform: uppercase;
-    border-radius: 4rem;
-}
-
-.boton-web:hover {
-    background-color: orange;
-}
 
 .boton-repo {
     display: inline-block;
     background-color: var(--negro);
     color: white;
-    padding: 10px 20px;
+    padding: 10px 15%;
     text-decoration: none;
     font-weight: bold;
     text-transform: uppercase;
@@ -349,7 +346,7 @@ hr{
         transition: transform 0.3s ease; /* 0.3 segundos es la duración y "ease" es la función de aceleración */
     }
     .entrada-blog:hover{
-        transform: scale(1.05);
+        transform: scale(1.03);
     }
     
 }
@@ -359,7 +356,7 @@ hr{
 
 /** Experiencia **/
 .experiencia-bg {
-    background-image: linear-gradient(#0f4afdce, #020e33ce), url('/img/intro-bg.png');;
+    background-image: linear-gradient(#0338d6ce, #020e33ce), url('/img/intro-bg.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -370,6 +367,15 @@ hr{
     right: 0;
     z-index: 1;
 }
+
+.experiencia-bg img {
+    border-radius: 4rem;
+    display: block;
+    margin: 0 auto;
+    max-width: 25%;
+    padding-bottom: 2rem;
+}
+
 
 
 /** Lenguajes **/
@@ -393,7 +399,7 @@ hr{
     .contenedor-lenguajes {
         background-color: var(--blanco);
         padding: 0 3rem;
-        margin-top: 55rem;
+        margin-top: 85rem;
         border-radius: 3rem; /* Ajusta el valor para cambiar la cantidad de redondeo */
         box-shadow: 10px 10px 24px -14px rgba(0,0,0,0.75);
         -webkit-box-shadow: 10px 10px 24px -14px rgba(0,0,0,0.75);
@@ -457,3 +463,49 @@ hr{
     margin: 0;
     padding: 0;
 }
+
+
+/** Educacion **/
+.educacion-bg {
+    position: relative;
+    z-index: 1;
+    background-image: url('/img/Curve_Line2.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding-top: 2rem;
+    bottom: 35rem;
+}
+
+.educacion-contenedor {
+    padding-top: 35rem;
+}
+
+.educacion-bg .entrada-blog img {
+    width: 70%;
+}
+
+.educacion-bg h2 {
+    padding: 3rem;
+    font-family: sans-serif;
+}
+
+
+
+/** Ceritificados **/
+.contenedor-certificados {
+    position: relative;
+    z-index: 1;
+    bottom: 30rem;
+}
+
+.contenedor-certificados  h2 {
+    padding: 3rem;
+    font-family: sans-serif;
+}
+
+.certificados-img {
+    width: 27rem;
+    border-radius: 5rem;
+}
+
