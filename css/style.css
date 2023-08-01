@@ -62,6 +62,7 @@ h3{
 }
 h4{
     font-size: 1.5rem;
+    font-weight: bold;
 }
 .contenedor h2 {
     text-align: center;
@@ -71,15 +72,15 @@ img{
     max-width: 30%;
     border-radius: 50%;
 }
-.acercademi-texto span{
+span{
     font-weight: bold;
     color: var(--secundario);
 }
-.experiencia-bg span{
-    font-weight: bold;
-    color: var(--secundario);
+.proyectos-bg span {
+    color: var(--negro);
 }
 .header__texto span {
+    color: var(--blanco);
     font-size: 8rem;
 }
 @media (max-width: 550px){
@@ -322,6 +323,10 @@ hr{
     max-width: 100%;
     border-radius: 0%;
 }
+.entrada-blog p {
+    text-align: justify;
+    padding: 0 3rem;
+}
 
 @media (max-width: 1025px) { /** Tablet **/
     .entrada-blog img {
@@ -493,6 +498,9 @@ hr{
 
 
 /** Ceritificados **/
+.certificados-bg{
+}
+
 .contenedor-certificados {
     position: relative;
     z-index: 1;
@@ -505,7 +513,27 @@ hr{
 }
 
 .certificados-img {
-    width: 27rem;
+    width: 20rem;
     border-radius: 5rem;
 }
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px; /* Espacio de 10px entre los elementos */
+  }
+  
+.item {
+    border: solid 1px var(--negro);
+    color: var(--blanco);
+    border-radius: 3rem;
+    text-align: center;
+    margin: 0.2rem;
+    padding: 0.5rem;
+  }
+
+.udemy .item {
+    background-image: linear-gradient(#ac03d6ce, #020e33ce), url('/img/intro-bg.png');
+}
+  
 
