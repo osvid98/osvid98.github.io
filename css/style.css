@@ -21,6 +21,7 @@
 html{
     box-sizing: border-box;
     font-size: 62.5%; /* 1 rem = 10px */
+    scroll-behavior: smooth;
 }
 *, *:before, *:after{
     box-sizing: inherit;
@@ -140,22 +141,15 @@ textarea {
 
 /** Header + NavBar **/
 .header {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 1;
-    
     background-image: linear-gradient(var(--primario-BG), var(--negro)), url('/img/Hexagon2.svg');
-    height: 110rem; /* Anchura degradao */
+    height: 100rem; /* Anchura degradado */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
 }
-@media (max-width: 516px){
+@media (max-width: 1200px){
     .header {
-        height: 145rem; /* Anchura degradao */
+        height: 100%; /* Anchura degradado movil */
     }
 }
 .contenedor-header{
@@ -163,9 +157,12 @@ textarea {
     text-align: center;
     position: relative;
 }
+.header-titulos{
+    margin-top: 3rem;
+}
 .header__texto{
-    padding: 1.5rem;
-    margin-top: 5rem;
+    padding-top: 3rem;
+    padding-bottom: 4rem;
     line-height: 6rem;
 }
 .header__texto--parrafo {
@@ -222,26 +219,9 @@ textarea {
 
 
 /** ACERCA DE MI **/
-.contenedor-acercademi {
-    padding-top: 27rem;
-}
-@media (max-width: 390px){
-    .contenedor-acercademi {
-        padding-top: 36rem;
-    }
-}
-@media (min-width: 580px) and (max-width: 763px){
-    .contenedor-acercademi {
-        padding-top: 30rem;
-    }
-}
 .contenedor-acercademi .acercademi-texto {
-    margin-top: 2rem;
+    margin-top: 5rem;
     padding-bottom: 8rem;
-}
-.contenedor-acercademi img {
-    position: relative;
-    z-index: 2;
 }
 @media (min-width: 1200px) {
     .contenedor-acercademi img {
@@ -255,12 +235,7 @@ textarea {
     margin: 0 auto;
 }
 @media (min-width: 1200px) { /** Min. Laptop **/
-    .contenedor-acercademi {
-        padding-top: 38rem;
-    }
     .contenedor-acercademi img {
-        position: relative;
-        z-index: 2;
         float: right; /* Flotar la imagen a la izquierda */
     }
     .acercademi-foto {
@@ -280,8 +255,6 @@ textarea {
     }
 }
 .acercademi-texto {
-    position: relative;
-    z-index: 2;
     text-align: justify;
 }
 
