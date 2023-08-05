@@ -7,12 +7,18 @@
 
     <link rel="stylesheet" href="/css/normalize.css">
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/dynamic.css">
 
     <title>Oscar Romero | SWE - Student</title>
 </head>
 
 <body>
-
+    <div id="top"></div>    
+    <div id="scroll-to-top">
+        <a href="#top">
+            <img src="/img/punta-de-flecha-hacia-arriba.png" alt="" srcset="">
+        </a>
+    </div>  
     <header class="header">
         <div class="contenedor">
             <div class="barra">
@@ -21,24 +27,42 @@
                 </a>
 
                 <nav class="navegacion">
-                    <a href="" class="navegacion__enlace">Proyectos</a>
-                    <a href="#" class="navegacion__enlace">Experiencia</a>
-                    <a href="#" class="navegacion__enlace">Educación</a>
-                    <a href="#" class="navegacion__enlace">Certificaciones</a>
-                    <a href="#" class="navegacion__enlace">Contacto</a>
+                    <a href="#Proyectos" class="navegacion__enlace">Proyectos</a>
+                    <a href="#Experiencia" class="navegacion__enlace">Experiencia</a>
+                    <a href="#Educacion" class="navegacion__enlace">Educación</a>
+                    <a href="#Certificaciones" class="navegacion__enlace">Certificaciones</a>
+                    <a href="#Contacto" class="navegacion__enlace">Contacto</a>
                 </nav>
+            </div>
+            
+        </div>
+        
+        <div class="contenedor-header header__texto">
+            <div>
+                <div class="menu-btn">
+                    <div class="btn-line"></div>
+                    <div class="btn-line"></div>
+                    <div class="btn-line"></div>
+                </div>
+                  <nav class="menu">
+                    <ul>
+                        <img src="/favicon/logo-navbar2.png">
+                        <li><a href="#Proyectos" class="navegacion__enlace">Proyectos</a></li>
+                        <li><a href="#Experiencia" class="navegacion__enlace">Experiencia</a></li>
+                        <li><a href="#Educacion" class="navegacion__enlace">Educación</a></li>
+                        <li><a href="#Certificaciones" class="navegacion__enlace">Certificaciones</a></li>
+                        <li><a href="#Contacto" class="navegacion__enlace">Contacto</a></li>
+                    </ul>
+                    <button class="close-btn">X</button>
+                  </nav>
+            </div>
+            <div class="header-titulos">
+                <h1 class="no-margin header__texto--nombre"><span>O</span>SCAR <span>R</span>OMERO</h1>
+                <h2 class="no-margin header__texto--margin">Estudiante Ing. Sistemas Computacionales</h2>
+                <h3 class="no-margin header__texto--parrafo">FUTURO Desarrollador Full Stack</h3>
             </div>
         </div>
 
-        <div class="contenedor-header header__texto">
-            <h1 class="no-margin header__texto--nombre"><span>O</span>SCAR <span>R</span>OMERO</h1>
-            <h2 class="no-margin header__texto--margin">Estudiante Ing. Sistemas Computacionales</h2>
-            <h3 class="no-margin header__texto--parrafo">FUTURO Desarrollador Full Stack</h3>
-        </div>
-    </header>
-
-
-    <main>
         <article class="contenedor">
             <div class="contenedor-acercademi">
                 <img class="acercademi-foto" src="./img/Oscar Romero.jpg" alt="Oscar David Romero Hernández">
@@ -68,8 +92,13 @@
                 </div>
             </div>
         </article>
+    </header>
 
-        <section class="proyectos-bg">
+
+    <main>
+        
+
+        <section class="proyectos-bg" id="Proyectos">
             <h2 class="centrar-texto">Proyectos</h2>
             <div class="contenedor dos-columnas centrar-texto">
                 <article class="entrada-blog">
@@ -104,7 +133,7 @@
             </div>
         </section>
 
-        <article class="experiencia-bg">
+        <article class="experiencia-bg" id="Experiencia">
             <div class="contenedor texto-blanco centrar-texto">
                 <h2>Experiencia y Conocimientos</h2>
                 <div class="contenedor-experiencia-img">
@@ -219,7 +248,7 @@
             </div>
         </article>
 
-        <section class="educacion-bg">
+        <section class="educacion-bg" id="Educacion">
             <div class="contenedor">
                 <div class="educacion-contenedor">
                     <h2>Educación</h2>
@@ -252,7 +281,7 @@
         </section>
 
 
-        <section class="certificados-bg">
+        <section class="certificados-bg" id="Certificaciones">
             <div class="contenedor-big centrar-texto">
                 <h2 class="centrar-texto">Certificados y Constancias</h2>
                 <div class="contenedor-certificados">
@@ -372,7 +401,7 @@
 
 
 
-        <section class="contacto-bg">
+        <section class="contacto-bg" id="Contacto">
             <div class="contenedor contenedor-contacto">
                 <div class="item-contacto">
                     <h1>CONTÁCTAME</h1>
@@ -464,6 +493,8 @@
         </div>
     </footer>
 
+
+    <script src="/js/dynamic.js"></script>
 
 </body>
 
