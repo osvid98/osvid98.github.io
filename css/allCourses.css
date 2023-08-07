@@ -1,0 +1,234 @@
+/** Selectores **/
+:root{
+    --primario-BG: rgba(0, 52, 209, 0.658);
+    --secundario-BG: rgba(4, 5, 27, 0.952);
+    --primario: rgb(0, 52, 209);
+    --secundario: #ffd900;
+    --blanco: #ffffff;
+    --negro: #000000;
+    --gris: #757575;
+}
+
+@font-face {
+    font-family: Avenir-Book;
+    src: url('/fonts/Avenir-Book.ttf');
+}
+
+/** Globales **/
+html{
+    box-sizing: border-box;
+    font-size: 62.5%; /* 1 rem = 10px */
+    scroll-behavior: smooth;
+}
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+body{
+    font-family: sans-serif;
+    font-size: 1.6rem;
+    line-height: 2;
+}
+.contenedor{
+    max-width: 125rem;
+    width: 80%;
+    margin: 0 auto;
+}
+.contenedor-big{
+    max-width: 180rem;
+    width: 80%;
+    margin: 0 auto;
+}
+a {
+    color: inherit; /* Hereda el color del texto del elemento padre */
+    text-decoration: none; /* Quita la subrayado por defecto */
+    background-color: transparent; /* Establece el color de fondo transparente */
+    text-decoration: none;
+}
+h1,h2,h3,h4{
+    font-family: Avenir-Book;
+}
+h2,h3,h4{
+    line-height: 1.2;
+}
+h1{
+    font-size: 5.8rem;
+    font-family: sans-serif;
+    font-weight: bolder;
+}
+h2{
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+h3{
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+h4{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.contenedor h2 {
+    text-align: center;
+    text-transform: uppercase;
+}
+img{
+    max-width: 30%;
+    border-radius: 50%;
+}
+span{
+    font-weight: bold;
+    color: var(--secundario);
+}
+.proyectos-bg span {
+    color: var(--negro);
+}
+.header__texto span {
+    color: var(--blanco);
+    font-size: 8rem;
+}
+@media (max-width:  580px){
+    .header__texto span {
+        font-size: 6rem;
+    }
+}
+hr{
+    color: var(--negro);
+    position: relative;
+    z-index: 2;
+}
+textarea {
+    resize: none;
+}
+.centrar-texto{
+    text-align: center;
+}
+
+
+
+/** Ceritificados **/
+.certificados-bg{
+    background-image: linear-gradient(var(--primario-BG), var(--secundario-BG)), url('/img/BG/Hexagon2.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding-bottom: 10rem;
+}
+
+.certificados-bg h2{
+    padding-top: 6rem;
+    padding-bottom: 2rem;
+    font-family: sans-serif;
+    color: var(--blanco);
+}
+
+.educacion-bg h2 {
+    padding: 3rem;
+    font-family: sans-serif;
+}
+
+.contenedor-certificados {
+    top: 0;
+    padding-top: 2rem;
+    position: relative;
+    z-index: 1;
+    bottom: 30rem;
+    color: var(--blanco);
+    display: grid;
+    gap: 3rem;
+}
+
+@media (min-width: 1200px) {
+    .contenedor-certificados {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1px) and (max-width: 480px) {
+    .logo-ext{
+        display: none;
+    }
+}
+
+.contenedor-certificados h2 {
+    padding: 3rem;
+    font-family: Avenir-Book;
+}
+
+.contenedor-curso-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 2rem;
+}
+
+.certificados-img {
+    width: 10rem;
+    border-radius: 3rem;
+    margin-right: 4rem;
+    margin-bottom: 1rem;
+    border: solid 1px var(--blanco);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,1);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,1);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,1);
+}
+
+.container {
+    display: grid;
+    grid-gap: 10px; /* Espacio de 10px entre los elementos */
+}
+
+.curso-titulo{
+    text-decoration: underline;
+}
+  
+.item {
+    color: var(--blanco);
+    border-radius: 3rem;
+    text-align: center;
+    margin: 1rem;
+    padding: 1rem;
+    box-shadow: 5px 4px 5px 0px rgba(0,0,0,1);
+    -webkit-box-shadow: 5px 4px 5px 0px rgba(0,0,0,1);
+    -moz-box-shadow: 5px 4px 5px 0px rgb(0, 0, 0);
+    border: solid 1px var(--blanco);
+    transition: transform 0.3s ease;
+}
+
+.item:hover {
+    transform: scale(1.03);
+}
+
+.udemy .item {
+    background-image: linear-gradient(#000000ce, #000000ce), url('/img/BG/intro-bg.png');
+}
+
+.devtalles .item {
+    background-image: linear-gradient(#3500afce, #190052ce), url('/img/BG/intro-bg.png');
+}
+
+.logos-lenguajes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 1rem;
+    gap: 1.2rem;
+}
+
+.logo-lenguaje {
+    width: 3.5rem;
+    border-radius: 0;
+}
+
+.logo-lenguaje-php {
+    width: 4.5rem;
+    height: 2.8rem;
+    border-radius: 0;
+}
+
+.logo-lenguaje-jest {
+    width: 3rem;
+    border-radius: 0;
+}
