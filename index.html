@@ -9,8 +9,8 @@
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/dynamic.css">
 
-    <script src="/js/scroll-top.js"></script>
-    <script src="/js/menu-burguer.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+
 
     <title>Oscar Romero | SWE - Student</title>
 </head>
@@ -25,11 +25,11 @@
     <header class="header">
         <div class="contenedor">
             <div class="barra">
-                <a href="index.html" class="logo">
+                <a href="index.html" class="logo reveal7">
                     <img src="/favicon/logo-navbar2.png" alt="Logo">
                 </a>
 
-                <nav class="navegacion">
+                <nav class="navegacion reveal6">
                     <a href="#Proyectos" class="navegacion__enlace">Proyectos</a>
                     <a href="#Experiencia" class="navegacion__enlace">Experiencia</a>
                     <a href="#Educacion" class="navegacion__enlace">Educación</a>
@@ -62,16 +62,16 @@
 
 
             <div class="header-titulos">
-                <h1 class="no-margin header__texto--nombre"><span>O</span>SCAR <span>R</span>OMERO</h1>
-                <h2 class="no-margin header__texto--margin">Estudiante Ing. Sistemas Computacionales</h2>
-                <h3 class="no-margin header__texto--parrafo">FUTURO Desarrollador Full Stack</h3>
+                <h1 class="no-margin header__texto--nombre reveal"><span>O</span>SCAR <span>R</span>OMERO</h1>
+                <h2 class="no-margin header__texto--margin reveal2">Estudiante Ing. Sistemas Computacionales</h2>
+                <h3 class="no-margin header__texto--parrafo reveal3">FUTURO Desarrollador Full Stack</h3>
             </div>
         </div>
 
         <article class="contenedor">
             <div class="contenedor-acercademi">
-                <img class="acercademi-foto" src="/img/pictures/Oscar_Romero.jpg" alt="Oscar David Romero Hernández">
-                <div class="acercademi-texto texto-blanco">
+                <img class="acercademi-foto reveal5" src="/img/pictures/Oscar_Romero.jpg" alt="Oscar David Romero Hernández">
+                <div class="acercademi-texto texto-blanco reveal4">
                     <p>¡Hola, Soy Oscar David!, un estudiante de 21 años de la <span>Escuela Superior de Computo</span>, donde
                         me encuentro estudiando <span>Ingeniería en Sistemas Computacionales</span>. Actualmente estoy
                         trabajando en un pequeño <span>intership</span> como
@@ -100,9 +100,9 @@
 
     <main>
         <section class="proyectos-bg" id="Proyectos">
-            <h2 class="centrar-texto">Proyectos</h2>
+            <h2 class="centrar-texto h-reveal">Proyectos</h2>
             <div class="contenedor dos-columnas centrar-texto">
-                <article class="entrada-blog reveal">
+                <article class="entrada-blog h-reveal">
                     <a href="https://ingresapp.xyz/" target="_blank">
                         <h3>INGRESAPP</h3>
                         <img src="img/pictures/proyecto-ingresapp.jpg">
@@ -112,7 +112,7 @@
                             otras tecnologías usadas, como <span>Docker</span> para la creación de servidores virtuales.</p>
                     </a>
                 </article>
-                <article class="entrada-blog">
+                <article class="entrada-blog h-reveal2">
                     <a href="/" target="_blank">
                         <h3>Mérito IPN</h3>
                         <img src="img/pictures/proyecto-galardonados.jpg">
@@ -122,7 +122,7 @@
                             con <span>HTML, CSS, JS, PHP y el framework del gobierno</span> de la ciudad de México. </p>
                     </a>
                 </article>
-                <article class="entrada-blog">
+                <article class="entrada-blog h-reveal3">
                     <a href="/" target="_blank">
                         <h3>DGS Hidraulica</h3>
                         <img src="img/pictures/proyecto-hidraulica.jpg">
@@ -139,13 +139,13 @@
 
         <article class="experiencia-bg" id="Experiencia">
             <div class="contenedor texto-blanco centrar-texto">
-                <h2>Experiencia y Conocimientos</h2>
+                <h2 class="h-reveal">Experiencia y Conocimientos</h2>
                 <div class="contenedor-experiencia-img">
-                    <img class="img-lenguaje" src="/img/lovoVue.png" alt="Logo Vue.js">
-                    <img src="/img/logoIngresapp.png" alt="Logo INGRESAPP">
-                    <img class="img-lenguaje" src="/img/logoDjango.png" alt="Logo Django">
+                    <img class="img-lenguaje h-reveal" src="/img/lovoVue.png" alt="Logo Vue.js">
+                    <img class="h-reveal2" src="/img/logoIngresapp.png" alt="Logo INGRESAPP">
+                    <img class="img-lenguaje h-reveal3" src="/img/logoDjango.png" alt="Logo Django">
                 </div>
-                <div class="experiencia-texto">
+                <div class="experiencia-texto h-reveal4">
                     <p>
                         Actualmente me encuentro trabajando en un pequeño <span>Intership</span> conformado por 4
                         personas como <span>desarrollador full stack</span> en un proyecto
@@ -178,15 +178,15 @@
                         su
                         version Web
                         (Donde yo me encuentro colaborando como desarrollador de ambas, pero mi fuerte está en Web)
-                        <span><a href="/" target="_blank">¡Ven y dale un vistazo a este increíble proyecto!</a></span>
+                        <span><a href="https://ingresapp.xyz/" target="_blank">¡Ven y dale un vistazo a este increíble proyecto!</a></span>
                     </p>
                 </div>
             </div>
         </article>
 
         <article class="contenedor">
-            <div class="contenedor-lenguajes ">
-                <div class="columna-lenguajes">
+            <div class="contenedor-lenguajes h-reveal2">
+                <div class="columna-lenguajes h-reveal4">
                     <div class="contenedor-circulo ">
                         <div class="circulo">
                             <img src="/img/icons/design_services.svg" alt="Logo Diseño">
@@ -208,7 +208,7 @@
                         <p class="parrafo-negritas separador-texto">Canva</p>
                     </div>
                 </div>
-                <div class="columna-lenguajes">
+                <div class="columna-lenguajes h-reveal5">
                     <div class="contenedor-circulo ">
                         <div class="circulo">
                             <img src="/img/icons/terminal.svg" alt="Logo Diseño">
@@ -229,7 +229,7 @@
                         <p class="parrafo-negritas separador-texto">Spring </p>
                     </div>
                 </div>
-                <div class="columna-lenguajes">
+                <div class="columna-lenguajes h-reveal6">
                     <div class="contenedor-circulo ">
                         <div class="circulo">
                             <img src="/img/icons/dynamic_feed.svg" alt="Logo Diseño">
@@ -256,23 +256,23 @@
         <section class="educacion-bg" id="Educacion">
             <div class="contenedor">
                 <div class="educacion-contenedor">
-                    <h2>Educación</h2>
+                    <h2 class="h-reveal2">Educación</h2>
                     <div class="contenedor dos-columnas centrar-texto">
-                        <article class="entrada-blog">
+                        <article class="entrada-blog h-reveal3">
                             <h3>CECyT 8 "Narciso Bassols"</h3>
                             <h4>Nivel Media Superior <br> INSTITUTO POLITÉCNICO NACIONAL</h4>
                             <img src="img/logos/shields/escudoCecyt8.png">
                             <h3>Técnico En Computación</h3>
                             <h4>Generación 2017 - 2020</h4>
                         </article>
-                        <article class="entrada-blog">
+                        <article class="entrada-blog h-reveal4">
                             <h3>ESC. SUPERIOR DE COMPUTO</h3>
                             <h4>Nivel Superior <br> INSTITUTO POLITÉCNICO NACIONAL</h4>
                             <img src="img/logos/shields/escudoESCOM.png">
                             <h3>Ing. Sistemas Computacionales</h3>
                             <h4>Generación 2020 - 2025</h4>
                         </article>
-                        <article class="entrada-blog">
+                        <article class="entrada-blog h-reveal5">
                             <h3>CELEX Lenguas Extranjeras </h3>
                             <h4>Nivel Superior <br> INSTITUTO POLITÉCNICO NACIONAL</h4>
                             <img src="img/logos/shields/escudoCelex.png">
@@ -288,15 +288,15 @@
 
         <section class="certificados-bg" id="Certificaciones">
             <div class="contenedor-big centrar-texto">
-                <h2 class="centrar-texto">Certificados y Constancias</h2>
+                <h2 class="centrar-texto h-reveal">Certificados y Constancias</h2>
                 <div class="contenedor-certificados">
                     <div class="certificados-columna">
-                        <div class="contenedor-curso-img">
+                        <div class="contenedor-curso-img h-reveal2">
                             <img class="certificados-img" src="img/logos/courses/udemy.png" alt="Logo Udemy">
                             <h3>UDEMY</h3>
                         </div>
                         <div class="container udemy">
-                            <a class="item" href="/" target="_blank">
+                            <a class="item h-reveal2" href="/html/working.html" target="_blank">
                                 <h4 class="curso-titulo">Desarrollo Web 100% Practico</h4>
                                 <h4>HTML, CSS, JS, AJAX<br> PHP, MySQL y más!</h4>
                                 <div class="logos-lenguajes">
@@ -309,35 +309,36 @@
                                     <img class="logo-lenguaje" src="/img/logoMySQL.png" alt="Logo MySQL">
                                 </div>
                             </a>
-                            <a class="item" href="/" target="_blank">
+                            <a class="item h-reveal3" href="/html/working.html" target="_blank">
                                 <h4 class="curso-titulo">Universidad Java</h4>
                                 <h4>POO, Spring, Web Services, <br>Hibernate y más!</h4>
                                 <div class="logos-lenguajes">
                                     <img class="logo-lenguaje" src="/img/logoJAVA.png" alt="Logo JAVA">
                                     <img class="logo-lenguaje" src="/img/logoSpring.png" alt="Logo Spring">
                                     <img class="logo-lenguaje" src="/img/logoHibernate.png" alt="Logo Hibernate">
+                                    <img class="logo-lenguaje" src="/img/logoJSF.png" alt="Logo JSF">
                                     <img class="logo-lenguaje" src="/img/logoMySQL.png" alt="Logo MySQL">
                                 </div>
                             </a>
-                            <a class="item" href="/" target="_blank">
+                            <a class="item h-reveal4" href="/html/working.html" target="_blank">
                                 <h4 class="curso-titulo">Maestro de Python</h4>
                                 <h4>Tkinter, SQLite, Pandas, Django, <br> FastAPI, Bs4 y más!</h4>
                                 <div class="logos-lenguajes">
                                     <img class="logo-lenguaje" src="/img/logoPython.png" alt="Logo Python">
-                                    <img class="logo-lenguaje" src="/img/logoMySQL.png" alt="Logo MySQL">
                                     <img class="logo-lenguaje" src="/img/logo django.png" alt="Logo Django">
+                                    <img class="logo-lenguaje" src="/img/logoMySQL.png" alt="Logo MySQL">
                                 </div>
                             </a>
                         </div>
                     </div>
 
                     <div class="certificados-columna">
-                        <div class="contenedor-curso-img">
+                        <div class="contenedor-curso-img h-reveal3">
                             <img class="certificados-img" src="img/logos/courses/devtalles.jpg" alt="Logo DevTalles">
                             <h3>DevTalles</h3>
                         </div>
                         <div class="container devtalles">
-                            <a class="item" href="/" target="_blank">
+                            <a class="item h-reveal3" href="/html/working.html" target="_blank">
                                 <h4 class="curso-titulo">Vue.js: De cero a experto</h4>
                                 <h4>Vuex, Unit Test (JEST),<br>Comp. API, Deployment, y más!</h4>
                                 <div class="logos-lenguajes">
@@ -346,15 +347,17 @@
                                     <img class="logo-lenguaje" src="/img/logoAxios.png" alt="Logo Axios">
                                 </div>
                             </a>
-                            <a class="item" href="/" target="_blank">
+                            <a class="item h-reveal4" href="https://cursos.devtalles.com/certificates/vgc3oeeuer" target="_blank">
                                 <h4 class="curso-titulo">GIT + GitHub</h4>
                                 <h4>Git, GitHub, Markdown, Wikis,<br>Issues y más!</h4>
                                 <div class="logos-lenguajes">
                                     <img class="logo-lenguaje" src="/img/logoGit.png" alt="Logo Git">
-                                    <img class="logo-lenguaje" src="/img/logoGitHub.png" alt="Logo Git">
+                                    <img class="logo-lenguaje" src="/img/logoGitHub.png" alt="Logo GitHub">
+                                    <img class="logo-lenguaje" src="/img/logoMarkdown.png" alt="Logo Markdown">
+
                                 </div>
                             </a>
-                            <a class="item" href="/" target="_blank">
+                            <a class="item h-reveal5" href="/html/working.html" target="_blank">
                                 <h4 class="curso-titulo">JavaScript Moderno</h4>
                                 <h4>De cero conocimientos en JS <br>a un nivel avanzado</h4>
                                 <div class="logos-lenguajes">
@@ -365,12 +368,12 @@
                     </div>
 
                     <div class="certificados-columna">
-                        <div class="contenedor-curso-img">
+                        <div class="contenedor-curso-img h-reveal4">
                             <img class="certificados-img" src="img/logos/courses/coursera.png" alt="Logo Coursera">
                             <h3>Coursera <br>& OTROS</h3>
                         </div>
                         <div class="container udemy">
-                            <a class="item" href="/" target="_blank">
+                            <a class="item h-reveal4" href="/html/working.html" target="_blank">
                                 <h4 class="curso-titulo">HTML, CSS, JS for Web Developers</h4>
                                 <h4>| Coursera |<br>Johns Hopkins University</h4>
                                 <div class="logos-lenguajes">
@@ -379,7 +382,7 @@
                                     <img class="logo-lenguaje" src="/img/logoJS.png" alt="Logo JS">
                                 </div>
                             </a>
-                            <a class="item" href="/" target="_blank">
+                            <a class="item h-reveal5" href="/html/working.html" target="_blank">
                                 <h4 class="curso-titulo">Introducción a FrontEnd</h4>
                                 <h4>| Externo |<br>Curies Community</h4>
                                 <div class="logos-lenguajes">
@@ -388,7 +391,7 @@
                                     <img class="logo-lenguaje" src="/img/logoJS.png" alt="Logo JS">
                                 </div>
                             </a>
-                            <a class="item" href="/" target="_blank">
+                            <a class="item h-reveal6" href="/pdf/Conecta empleo.pdf" target="_blank">
                                 <h4 class="curso-titulo">Community Management</h4>
                                 <h4>| Movistar |<br>Conecta Empleo</h4>
                                 <div class="logos-lenguajes">
@@ -401,7 +404,7 @@
                     </div>
                 </div>
                 <a href="/html/allCourses.html">
-                    <input class="boton-ver-mas w-100" type="button" value="Ver Todos">
+                    <input class="boton-ver-mas w-100 h-reveal7" type="button" value="Ver Todos">
                 </a>
             </div>
         </section>
@@ -410,10 +413,10 @@
 
         <section class="contacto-bg" id="Contacto">
             <div class="contenedor contenedor-contacto">
-                <div class="item-contacto">
+                <div class="item-contacto h-reveal">
                     <h1>CONTÁCTAME</h1>
                     <div class="contenedor-formas-contacto">
-                        <div class="contenedor-contacto-item">
+                        <div class="contenedor-contacto-item h-reveal4">
                             <a class="forma-item" href="https://www.linkedin.com/in/osvid-romero-hdz/" target="_blank">
                                 <div class="forma-contenedor">
                                     <img src="/img/logos/social-networks/linkedin.png" alt="Logo Linkedin">
@@ -422,7 +425,7 @@
                             </a>
                         </div>
 
-                        <div class="contenedor-contacto-item">
+                        <div class="contenedor-contacto-item h-reveal6">
                             <a class="forma-item" href="mailto:osvid_romero@outlook.com">
                                 <div class="forma-contenedor">
                                     <img src="/img/logos/social-networks/gmail.png" alt="Logo Gmail">
@@ -431,7 +434,7 @@
                             </a>
                         </div>
 
-                        <div class="contenedor-contacto-item">
+                        <div class="contenedor-contacto-item h-reveal8">
                             <a class="forma-item" href="https://api.whatsapp.com/send?phone=+525527755300&text=Quiero Contactar Contigo" target="_blank">
                                 <div class="forma-contenedor">
                                     <img src="/img/logos/social-networks/whatsapp.png" alt="Logo Whatsapp">
@@ -442,7 +445,7 @@
 
                     </div>
                 </div>
-                <form class="formulario item-contacto" action="https://formspree.io/f/meqbedqn" method="POST">
+                <form class="formulario item-contacto h-reveal10" action="https://formspree.io/f/meqbedqn" method="POST">
                     <fieldset>
                         <div class="contenedor-campos">
                             <div class="campo">
@@ -477,8 +480,8 @@
 
 
     <footer class="footer-bg">
-        <div class="centrar-texto">
-            <a href="/">
+        <div class="centrar-texto h-reveal8">
+            <a href="#top">
                 <img class="footer-logo" src="/favicon/logo-navbar2.png">
             </a>
             <h3>Viviendo, aprendiendo & subiendo de nivel<br>un día a la vez.</h3>
@@ -499,6 +502,31 @@
             <p>Portafolio creado por mi © 2023<br>Diseñado con HTML5, CSS3 y JavaScript</p>
         </div>
     </footer>
+
+    <script src="/js/scroll-top.js"></script>
+    <script src="/js/menu-burguer.js"></script>
+    <script>
+        /** HEADER **/
+		ScrollReveal().reveal('.reveal');
+        ScrollReveal().reveal('.reveal2', { delay: 100 });
+        ScrollReveal().reveal('.reveal3', { delay: 200 });
+        ScrollReveal().reveal('.reveal4', { delay: 300 });
+        ScrollReveal().reveal('.reveal5', { delay: 450 });
+        ScrollReveal().reveal('.reveal7', { delay: 550 });
+        ScrollReveal().reveal('.reveal6', { delay: 720 });
+
+        /** DEMAS **/
+        ScrollReveal().reveal('.h-reveal', { delay: 200 });
+        ScrollReveal().reveal('.h-reveal2', { delay: 300 });
+        ScrollReveal().reveal('.h-reveal3', { delay: 400 });
+        ScrollReveal().reveal('.h-reveal4', { delay: 500 });
+        ScrollReveal().reveal('.h-reveal5', { delay: 600 });
+        ScrollReveal().reveal('.h-reveal6', { delay: 700 });
+        ScrollReveal().reveal('.h-reveal7', { delay: 800 });
+        ScrollReveal().reveal('.h-reveal8', { delay: 900 });
+        ScrollReveal().reveal('.h-reveal9', { delay: 1000 });
+        ScrollReveal().reveal('.h-reveal10', { delay: 1100 });
+	</script>
 </body>
 
 </html>
