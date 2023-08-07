@@ -22,6 +22,7 @@ html{
     box-sizing: border-box;
     font-size: 62.5%; /* 1 rem = 10px */
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 *, *:before, *:after{
     box-sizing: inherit;
@@ -129,6 +130,7 @@ textarea {
 }
 .boton:hover{
     cursor: pointer;
+    background-color: var(--primario-BG)
 }
 .flex{
     display: flex;
@@ -142,17 +144,25 @@ textarea {
 .boton-ver-mas{
     background-color: var(--primario);
     color: var(--blanco);
-    padding: 1rem 3rem;
+    padding: 2rem 3rem;
     margin-top: 5rem;
     font-size: 2rem;
     text-decoration: none;
     text-transform: uppercase;
     font-weight: bold;
-    border-radius: .5rem;
-    width: 40rem;
+    border-radius: 1rem;
+    width: 35rem;
     text-align: center;
     border: none;
     cursor: pointer;
+}
+.boton-ver-mas:hover{
+    background-color: var(--primario-BG)
+}
+@media (max-width: 1200px) {
+    .boton-ver-mas{
+        width: 30rem;
+    }
 }
 
 
@@ -505,7 +515,7 @@ textarea {
     }
 
     .educacion-bg .entrada-blog img {
-        width: 30%;
+        width: 50%;
     }
 }
 
@@ -522,7 +532,7 @@ textarea {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    padding-bottom: 10rem;
+    padding-bottom: 6rem;
 }
 
 .certificados-bg h2{

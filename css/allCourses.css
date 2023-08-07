@@ -19,6 +19,7 @@ html{
     box-sizing: border-box;
     font-size: 62.5%; /* 1 rem = 10px */
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 *, *:before, *:after{
     box-sizing: inherit;
@@ -111,14 +112,20 @@ textarea {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
+    padding-top: 5rem;
     padding-bottom: 10rem;
 }
 
 .certificados-bg h2{
-    padding-top: 6rem;
     padding-bottom: 2rem;
     font-family: sans-serif;
     color: var(--blanco);
+}
+
+@media(max-width: 1200px){
+    .certificados-bg h2{
+        padding-top: 2rem;
+    }
 }
 
 .educacion-bg h2 {
@@ -150,11 +157,6 @@ textarea {
     .logo-ext{
         display: none;
     }
-}
-
-.contenedor-certificados h2 {
-    padding: 3rem;
-    font-family: Avenir-Book;
 }
 
 .contenedor-curso-img {
@@ -231,4 +233,19 @@ textarea {
 .logo-lenguaje-jest {
     width: 3rem;
     border-radius: 0;
+}
+
+
+.regresar-btn {
+    background-color: var(--negro);
+    border: solid 1px var(--blanco);
+    padding: 0.8rem;
+    font-size: 1.5rem;
+    border-radius: 1rem;
+    width: 5rem;
+    position: fixed;
+    top: 5rem;
+    left: 6rem;
+    transform: translate(-50%, -50%);
+    z-index: 99;
 }
