@@ -8,6 +8,9 @@
     --negro: #000000;
     --gris: #757575;
 }
+    
+
+
 
 
 /** Scroll to top **/
@@ -54,11 +57,18 @@
 
 /** Menu Hamburguesa **/
 .menu-btn {
+    display: block;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     cursor: pointer;
+}
+
+@media (min-width: 1200px){
+    .menu-btn {
+        display: none;
+    }
 }
   
 .btn-line {

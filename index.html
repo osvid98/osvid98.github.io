@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/dynamic.css">
 
+    <script src="/js/scroll-top.js"></script>
+    <script src="/js/menu-burguer.js"></script>
+
     <title>Oscar Romero | SWE - Student</title>
 </head>
 
@@ -16,7 +19,7 @@
     <div id="top"></div>    
     <div id="scroll-to-top">
         <a href="#top">
-            <img src="/img/punta-de-flecha-hacia-arriba.png" alt="" srcset="">
+            <img src="/img/icons/punta-de-flecha-hacia-arriba.png" alt="" srcset="">
         </a>
     </div>  
     <header class="header">
@@ -31,7 +34,7 @@
                     <a href="#Experiencia" class="navegacion__enlace">Experiencia</a>
                     <a href="#Educacion" class="navegacion__enlace">Educación</a>
                     <a href="#Certificaciones" class="navegacion__enlace">Certificaciones</a>
-                    <a href="#Contacto" class="navegacion__enlace">Contacto</a>
+                    <a class="nav-contacto" href="#Contacto" class="navegacion__enlace">Contacto</a>
                 </nav>
             </div>
             
@@ -56,6 +59,8 @@
                     <button class="close-btn">X</button>
                   </nav>
             </div>
+
+
             <div class="header-titulos">
                 <h1 class="no-margin header__texto--nombre"><span>O</span>SCAR <span>R</span>OMERO</h1>
                 <h2 class="no-margin header__texto--margin">Estudiante Ing. Sistemas Computacionales</h2>
@@ -65,13 +70,13 @@
 
         <article class="contenedor">
             <div class="contenedor-acercademi">
-                <img class="acercademi-foto" src="./img/Oscar Romero.jpg" alt="Oscar David Romero Hernández">
+                <img class="acercademi-foto" src="/img/pictures/Oscar_Romero.jpg" alt="Oscar David Romero Hernández">
                 <div class="acercademi-texto texto-blanco">
                     <p>¡Hola, Soy Oscar David!, un estudiante de 21 años de la <span>Escuela Superior de Computo</span>, donde
                         me encuentro estudiando <span>Ingeniería en Sistemas Computacionales</span>. Actualmente estoy
-                        trabajando en un pequeño intership como
+                        trabajando en un pequeño <span>intership</span> como
                         <span>Desarrollador Full Stack</span> creando un emocionante proyecto junto a un
-                        equipo de 4 personas. Usando <span>frameworks</span> como <span>Vue.js y Django.</span>
+                        equipo de 4 personas. Usando <span> diferentes frameworks</span> como <span>Vue.js y Django.</span>
                     </p>
 
                     <p>Me considero una persona muy <span>autónoma</span> dentro de del estudio de la
@@ -81,14 +86,12 @@
                         aprender cosas nuevas en este campo de constante evolución. Estoy comprometido con la
                         <span>excelencia</span>
                         y la <span>mejora continua</span>, buscando siempre superar los desafíos y brindar
-                        <span>soluciones innovadoras.</span>
+                        <span>soluciones eficientes e innovadoras.</span>
                     </p>
 
-                    <p>¡Es un placer compartir mi <span>entusiasmo</span> por la programación contigo! Estoy emocionado
-                        por lo que el
-                        futuro tiene reservado y por seguir creciendo como <span>profesional</span> en este apasionante
-                        mundo del
-                        desarrollo web.</p>
+                    <p>¡Es un placer compartir mi <span>entusiasmo</span> por la trabajar contigo! Estoy emocionado
+                        por lo que el futuro tiene reservado y por seguir creciendo como <span>profesional</span> en este apasionante
+                        mundo del desarrollo web.</p>
                 </div>
             </div>
         </article>
@@ -96,39 +99,40 @@
 
 
     <main>
-        
-
         <section class="proyectos-bg" id="Proyectos">
             <h2 class="centrar-texto">Proyectos</h2>
             <div class="contenedor dos-columnas centrar-texto">
-                <article class="entrada-blog">
-                    <h3>INGRESAPP</h3>
-                    <img src="img/proyecto1.jpg">
-                    <h4>Desarrollado Full Stack</h4>
-                    <p>Aplicación web de simuladores de exámenes para alumnos a nivel media y superior, diseñada con los
-                        frameworks <span>Vue.js</span> para el front-end y <span>Django</span> para el back-end, entre
-                        otras tecnologías usadas,
-                        como <span>Docker</span> para la creación de servidores virtuales.</p>
+                <article class="entrada-blog reveal">
+                    <a href="https://ingresapp.xyz/" target="_blank">
+                        <h3>INGRESAPP</h3>
+                        <img src="img/pictures/proyecto-ingresapp.jpg">
+                        <h4>Desarrollo Full Stack</h4>
+                        <p>Aplicación web de simuladores de exámenes para alumnos a nivel media y superior, diseñada con los
+                            frameworks <span>Vue.js</span> para el front-end y <span>Django</span> para el back-end, entre
+                            otras tecnologías usadas, como <span>Docker</span> para la creación de servidores virtuales.</p>
+                    </a>
                 </article>
                 <article class="entrada-blog">
-                    <h3>Mérito IPN</h3>
-                    <img src="img/proyecto2.jpg">
-                    <h4>Desarrollado Full Stack</h4>
-                    <p>Aplicación web para la otorgación de méritos en el IPN 2022, con el objetivo de que el
-                        galardonado pueda registrarse y confirmar su asistencia, diseñada con <span>HTML, CSS, JS, PHP y el framework
-                            del
-                            gobierno</span> de la ciudad de México. </p>
+                    <a href="/" target="_blank">
+                        <h3>Mérito IPN</h3>
+                        <img src="img/pictures/proyecto-galardonados.jpg">
+                        <h4>Desarrollo Full Stack</h4>
+                        <p>Aplicación web para la otorgación de méritos en el IPN 2022, con el objetivo de que el
+                            galardonado pueda registrarse y confirmar su asistencia, diseñada 
+                            con <span>HTML, CSS, JS, PHP y el framework del gobierno</span> de la ciudad de México. </p>
+                    </a>
                 </article>
                 <article class="entrada-blog">
-                    <h3>DGS Hidraulica</h1>
-                        <img src="img/proyecto3.jpg">
+                    <a href="/" target="_blank">
+                        <h3>DGS Hidraulica</h3>
+                        <img src="img/pictures/proyecto-hidraulica.jpg">
                         <h4>Colaboración UX/UI</h4>
                         <p>Web Estática, donde colaboré en un trabajo <spanc>freelancer</spanc> con un cliente
-                            real, donde diseñé el <span>UX / UI</span> usando <span>Figma</span> para crear los
-                            <span>mocks</span> que se
-                            serian utilizados en la página, también traté con el cliente para capturar
+                            real, diseñando el <span>UX / UI</span> en <span>Figma</span> para crear los
+                            <span>mocks</span> correspondientes del sitio web, también traté con el cliente para capturar
                             los <span>requisitos funcionales.</span>
                         </p>
+                    </a>
                 </article>
             </div>
         </section>
@@ -149,17 +153,18 @@
                         de aprender, desarrollar e implementar nuevas características siguiendo normas, estándares y
                         metodologías como <span>SCRUM</span>, para de esta manera obtener todos los conocimientos
                         necesarios
-                        que se usan día con día como desarrollador full stack.
+                        que se usan día con día como desarrollador full stack, aunque mi enfoque más fuerte está en el front-end.
                     </p>
                     <p>
-                        Mis actividades como desarrollador full stack en este proyecto son: diseñar <span>mocks</span>
+                        Mis actividades como desarrollador full stack en este proyecto varian entre: diseñar <span>mocks</span>
                         en
                         <span>figma</span>,
                         diseño del <span>UX/UI</span>,
                         desarrollo y programación de nuevas implementaciones en el <span>frontend y backend
                         </span>usando
                         <span>frameworks</span> como
-                        <span>Vue.js y Django</span>, corrección y actualización de código obsoleto y bugs, testing con
+                        <span>Vue.js y Django</span>, corrección y actualización de código obsoleto, corrección
+                        general de bugs, testing con
                         <span>JEST</span>, aseguramiento
                         de la calidad <span>(QA)</span>, desarrollo general y rotativo en <span>Web & Movil
                             (Android)</span>, gestión de versiones con <span>GitHub</span>,
@@ -172,8 +177,8 @@
                         de múltiples carreras y disciplinas. La app cuenta tanto con con su version movil (Android) como
                         su
                         version Web
-                        (Donde yo me encuentro colaborando como desarrollador de ambas, pero mi fuerte esta en Web)
-                        <span>¡Ven y dale un vistazo a este increíble proyecto!</span>
+                        (Donde yo me encuentro colaborando como desarrollador de ambas, pero mi fuerte está en Web)
+                        <span><a href="/" target="_blank">¡Ven y dale un vistazo a este increíble proyecto!</a></span>
                     </p>
                 </div>
             </div>
@@ -184,7 +189,7 @@
                 <div class="columna-lenguajes">
                     <div class="contenedor-circulo ">
                         <div class="circulo">
-                            <img src="/img/design_services.svg" alt="Logo Diseño">
+                            <img src="/img/icons/design_services.svg" alt="Logo Diseño">
                         </div>
                     </div>
 
@@ -206,7 +211,7 @@
                 <div class="columna-lenguajes">
                     <div class="contenedor-circulo ">
                         <div class="circulo">
-                            <img src="/img/terminal.svg" alt="Logo Diseño">
+                            <img src="/img/icons/terminal.svg" alt="Logo Diseño">
                         </div>
                     </div>
                     <h3>Lenguajes</h3>
@@ -227,7 +232,7 @@
                 <div class="columna-lenguajes">
                     <div class="contenedor-circulo ">
                         <div class="circulo">
-                            <img src="/img/dynamic_feed.svg" alt="Logo Diseño">
+                            <img src="/img/icons/dynamic_feed.svg" alt="Logo Diseño">
                         </div>
                     </div>
                     <h3>Herramientas</h3>
@@ -256,21 +261,21 @@
                         <article class="entrada-blog">
                             <h3>CECyT 8 "Narciso Bassols"</h3>
                             <h4>Nivel Media Superior <br> INSTITUTO POLITÉCNICO NACIONAL</h4>
-                            <img src="img/EscudoCecyt802-01.png">
+                            <img src="img/logos/shields/escudoCecyt8.png">
                             <h3>Técnico En Computación</h3>
                             <h4>Generación 2017 - 2020</h4>
                         </article>
                         <article class="entrada-blog">
                             <h3>ESC. SUPERIOR DE COMPUTO</h3>
                             <h4>Nivel Superior <br> INSTITUTO POLITÉCNICO NACIONAL</h4>
-                            <img src="img/EscudoESCOM.png">
+                            <img src="img/logos/shields/escudoESCOM.png">
                             <h3>Ing. Sistemas Computacionales</h3>
                             <h4>Generación 2020 - 2025</h4>
                         </article>
                         <article class="entrada-blog">
                             <h3>CELEX Lenguas Extranjeras </h3>
                             <h4>Nivel Superior <br> INSTITUTO POLITÉCNICO NACIONAL</h4>
-                            <img src="img/escudoCelex.png">
+                            <img src="img/logos/shields/escudoCelex.png">
                             <h3>LENGUAje INGLES INTERMEDIO B2</h3>
                             <h4>Generación 2020 - 2024</h4>
                         </article>
@@ -287,11 +292,11 @@
                 <div class="contenedor-certificados">
                     <div class="certificados-columna">
                         <div class="contenedor-curso-img">
-                            <img class="certificados-img" src="img/udemy.png" alt="Logo Udemy">
+                            <img class="certificados-img" src="img/logos/courses/udemy.png" alt="Logo Udemy">
                             <h3>UDEMY</h3>
                         </div>
                         <div class="container udemy">
-                            <div class="item">
+                            <a class="item" href="/" target="_blank">
                                 <h4 class="curso-titulo">Desarrollo Web 100% Practico</h4>
                                 <h4>HTML, CSS, JS, AJAX<br> PHP, MySQL y más!</h4>
                                 <div class="logos-lenguajes">
@@ -303,8 +308,8 @@
                                     <img class="logo-lenguaje-php" src="/img/logoSass.png" alt="Logo SASS">
                                     <img class="logo-lenguaje" src="/img/logoMySQL.png" alt="Logo MySQL">
                                 </div>
-                            </div>
-                            <div class="item">
+                            </a>
+                            <a class="item" href="/" target="_blank">
                                 <h4 class="curso-titulo">Universidad Java</h4>
                                 <h4>POO, Spring, Web Services, <br>Hibernate y más!</h4>
                                 <div class="logos-lenguajes">
@@ -313,8 +318,8 @@
                                     <img class="logo-lenguaje" src="/img/logoHibernate.png" alt="Logo Hibernate">
                                     <img class="logo-lenguaje" src="/img/logoMySQL.png" alt="Logo MySQL">
                                 </div>
-                            </div>
-                            <div class="item">
+                            </a>
+                            <a class="item" href="/" target="_blank">
                                 <h4 class="curso-titulo">Maestro de Python</h4>
                                 <h4>Tkinter, SQLite, Pandas, Django, <br> FastAPI, Bs4 y más!</h4>
                                 <div class="logos-lenguajes">
@@ -322,17 +327,17 @@
                                     <img class="logo-lenguaje" src="/img/logoMySQL.png" alt="Logo MySQL">
                                     <img class="logo-lenguaje" src="/img/logo django.png" alt="Logo Django">
                                 </div>
-                            </div>
+                            </a>
                         </div>
                     </div>
 
                     <div class="certificados-columna">
                         <div class="contenedor-curso-img">
-                            <img class="certificados-img" src="img/devtalles-logo.jpg" alt="Logo DevTalles">
+                            <img class="certificados-img" src="img/logos/courses/devtalles.jpg" alt="Logo DevTalles">
                             <h3>DevTalles</h3>
                         </div>
                         <div class="container devtalles">
-                            <div class="item">
+                            <a class="item" href="/" target="_blank">
                                 <h4 class="curso-titulo">Vue.js: De cero a experto</h4>
                                 <h4>Vuex, Unit Test (JEST),<br>Comp. API, Deployment, y más!</h4>
                                 <div class="logos-lenguajes">
@@ -340,32 +345,32 @@
                                     <img class="logo-lenguaje-jest" src="/img/logoJEST.png" alt="Logo JEST">
                                     <img class="logo-lenguaje" src="/img/logoAxios.png" alt="Logo Axios">
                                 </div>
-                            </div>
-                            <div class="item">
+                            </a>
+                            <a class="item" href="/" target="_blank">
                                 <h4 class="curso-titulo">GIT + GitHub</h4>
                                 <h4>Git, GitHub, Markdown, Wikis,<br>Issues y más!</h4>
                                 <div class="logos-lenguajes">
                                     <img class="logo-lenguaje" src="/img/logoGit.png" alt="Logo Git">
                                     <img class="logo-lenguaje" src="/img/logoGitHub.png" alt="Logo Git">
                                 </div>
-                            </div>
-                            <div class="item">
+                            </a>
+                            <a class="item" href="/" target="_blank">
                                 <h4 class="curso-titulo">JavaScript Moderno</h4>
                                 <h4>De cero conocimientos en JS <br>a un nivel avanzado</h4>
                                 <div class="logos-lenguajes">
                                     <img class="logo-lenguaje" src="/img/logoJS.png" alt="Logo JS">
                                 </div>
-                            </div>
+                            </a>
                         </div>
                     </div>
 
                     <div class="certificados-columna">
                         <div class="contenedor-curso-img">
-                            <img class="certificados-img" src="img/cursos.png" alt="Logo Coursera">
+                            <img class="certificados-img" src="img/logos/courses/coursera.png" alt="Logo Coursera">
                             <h3>Coursera <br>& OTROS</h3>
                         </div>
                         <div class="container udemy">
-                            <div class="item">
+                            <a class="item" href="/" target="_blank">
                                 <h4 class="curso-titulo">HTML, CSS, JS for Web Developers</h4>
                                 <h4>| Coursera |<br>Johns Hopkins University</h4>
                                 <div class="logos-lenguajes">
@@ -373,8 +378,8 @@
                                     <img class="logo-lenguaje" src="/img/logoCSS.png" alt="Logo CSS">
                                     <img class="logo-lenguaje" src="/img/logoJS.png" alt="Logo JS">
                                 </div>
-                            </div>
-                            <div class="item">
+                            </a>
+                            <a class="item" href="/" target="_blank">
                                 <h4 class="curso-titulo">Introducción a FrontEnd</h4>
                                 <h4>| Externo |<br>Curies Community</h4>
                                 <div class="logos-lenguajes">
@@ -382,8 +387,8 @@
                                     <img class="logo-lenguaje" src="/img/logoCSS.png" alt="Logo CSS">
                                     <img class="logo-lenguaje" src="/img/logoJS.png" alt="Logo JS">
                                 </div>
-                            </div>
-                            <div class="item">
+                            </a>
+                            <a class="item" href="/" target="_blank">
                                 <h4 class="curso-titulo">Community Management</h4>
                                 <h4>| Movistar |<br>Conecta Empleo</h4>
                                 <div class="logos-lenguajes">
@@ -391,11 +396,13 @@
                                     <img class="logo-lenguaje" src="/img/logoCSS.png" alt="Logo CSS">
                                     <img class="logo-lenguaje" src="/img/logoJS.png" alt="Logo JS">
                                 </div>
-                            </div>
+                            </a>
                         </div>
                     </div>
-                    
                 </div>
+                <a href="/html/allCourses.html">
+                    <input class="boton-ver-mas w-100" type="button" value="Ver Todos">
+                </a>
             </div>
         </section>
 
@@ -407,10 +414,10 @@
                     <h1>CONTÁCTAME</h1>
                     <div class="contenedor-formas-contacto">
                         <div class="contenedor-contacto-item">
-                            <a class="forma-item" href="mailto:osvidromero98@gmail.com">
+                            <a class="forma-item" href="https://www.linkedin.com/in/osvid-romero-hdz/" target="_blank">
                                 <div class="forma-contenedor">
-                                    <img src="/img/linkedin.png" alt="Logo Linkedin">
-                                    <p>Linkedin<br>in/osvid-romero/</p>
+                                    <img src="/img/logos/social-networks/linkedin.png" alt="Logo Linkedin">
+                                    <p>Linkedin<br>in/osvid-romero-hdz/</p>
                                 </div>
                             </a>
                         </div>
@@ -418,16 +425,16 @@
                         <div class="contenedor-contacto-item">
                             <a class="forma-item" href="mailto:osvid_romero@outlook.com">
                                 <div class="forma-contenedor">
-                                    <img src="/img/gmail.png" alt="Logo Gmail">
+                                    <img src="/img/logos/social-networks/gmail.png" alt="Logo Gmail">
                                     <p>Email<br>osvid_romero@outlook.com</p>
                                 </div>
                             </a>
                         </div>
 
                         <div class="contenedor-contacto-item">
-                            <a class="forma-item" href="mailto:osvidromero98@gmail.com">
+                            <a class="forma-item" href="https://api.whatsapp.com/send?phone=+525527755300&text=Quiero Contactar Contigo" target="_blank">
                                 <div class="forma-contenedor">
-                                    <img src="/img/whatsapp.png" alt="Logo Whatsapp">
+                                    <img src="/img/logos/social-networks/whatsapp.png" alt="Logo Whatsapp">
                                     <p>Whatsapp<br>+52 55 27 75 53 00</p>
                                 </div>
                             </a>
@@ -476,26 +483,22 @@
             </a>
             <h3>Viviendo, aprendiendo & subiendo de nivel<br>un día a la vez.</h3>
             <div class="redes-sociales">
-                <a href="https://xdsoft.com" target="_blank">
-                    <img src="/img/red-linkedin.png" alt="Logo linkedin">
+                <a href="https://www.linkedin.com/in/osvid-romero-hdz/" target="_blank">
+                    <img src="/img/logos/social-networks/red-linkedin.png" alt="Logo linkedin">
+                </a>
+                <a href="https://github.com/osvid98" target="_blank">
+                    <img src="/img/logos/social-networks/red-github.png" alt="Logo github">
+                </a>
+                <a href="https://www.youtube.com/@programacionpointer4778" target="_blank">
+                    <img src="/img/logos/social-networks/red-youtube.png" alt="Logo youtube">
                 </a>
                 <a href="https://xdsoft.com" target="_blank">
-                    <img src="/img/red-github.png" alt="Logo github">
-                </a>
-                <a href="https://xdsoft.com" target="_blank">
-                    <img src="/img/red-youtube.png" alt="Logo youtube">
-                </a>
-                <a href="https://xdsoft.com" target="_blank">
-                    <img src="/img/red-instagram.png" alt="Logo instagram">
+                    <img src="/img/logos/social-networks/red-instagram.png" alt="Logo instagram">
                 </a>
             </div>
             <p>Portafolio creado por mi © 2023<br>Diseñado con HTML5, CSS3 y JavaScript</p>
         </div>
     </footer>
-
-
-    <script src="/js/dynamic.js"></script>
-
 </body>
 
 </html>

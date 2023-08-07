@@ -41,7 +41,10 @@ body{
     width: 80%;
     margin: 0 auto;
 }
-a{
+a {
+    color: inherit; /* Hereda el color del texto del elemento padre */
+    text-decoration: none; /* Quita la subrayado por defecto */
+    background-color: transparent; /* Establece el color de fondo transparente */
     text-decoration: none;
 }
 h1,h2,h3,h4{
@@ -136,12 +139,26 @@ textarea {
 .w-100{
     width: 100%;
 }
-
+.boton-ver-mas{
+    background-color: var(--primario);
+    color: var(--blanco);
+    padding: 1rem 3rem;
+    margin-top: 5rem;
+    font-size: 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: .5rem;
+    width: 40rem;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+}
 
 
 /** Header + NavBar **/
 .header {
-    background-image: linear-gradient(var(--primario-BG), var(--negro)), url('/img/Hexagon2.svg');
+    background-image: linear-gradient(var(--primario-BG), var(--negro)), url('/img/BG/Hexagon2.svg');
     height: 100rem; /* Anchura degradado */
     background-size: cover;
     background-repeat: no-repeat;
@@ -203,10 +220,20 @@ textarea {
     }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
     .navegacion{
         display: flex;
         gap: 2rem;
+    }
+    .navegacion a:hover {
+        color: var(--secundario);
+        border-color: var(--secundario);
+    }
+    .nav-contacto{
+        color: var(--blanco);
+        border-radius: 2rem;
+        padding: 0 2rem;
+        border: solid 2px var(--blanco);
     }
 }
 .navegacion__enlace{
@@ -266,7 +293,7 @@ textarea {
 .proyectos-bg {
     position: relative;
     z-index: 2;
-    background-image: url('/img/Curve_Line.svg');
+    background-image: url('/img/BG/Curve_Line.svg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -315,7 +342,8 @@ textarea {
         /* Agrega la propiedad de transición */
         transition: transform 0.3s ease; /* 0.3 segundos es la duración y "ease" es la función de aceleración */
     }
-    .entrada-blog:hover{
+    .entrada-blog:hover {
+        cursor: default;
         transform: scale(1.03);
     }
     
@@ -326,7 +354,7 @@ textarea {
 
 /** Experiencia **/
 .experiencia-bg {
-    background-image: linear-gradient(var(--primario-BG), var(--secundario-BG)), url('/img/Hexagon.svg');
+    background-image: linear-gradient(var(--primario-BG), var(--secundario-BG)), url('/img/BG/Hexagon.svg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -457,7 +485,7 @@ textarea {
 .educacion-bg {
     position: relative;
     z-index: 1;
-    background-image: url("/img/Wave\ Line.svg");
+    background-image: url("/img/BG/Wave_Line.svg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -490,11 +518,11 @@ textarea {
 
 /** Ceritificados **/
 .certificados-bg{
-    background-image: linear-gradient(var(--primario-BG), var(--secundario-BG)), url('/img/Hexagon2.svg');
+    background-image: linear-gradient(var(--primario-BG), var(--secundario-BG)), url('/img/BG/Hexagon2.svg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    padding-bottom: 12rem;
+    padding-bottom: 10rem;
 }
 
 .certificados-bg h2{
@@ -588,11 +616,11 @@ textarea {
 }
 
 .udemy .item {
-    background-image: linear-gradient(#000000ce, #000000ce), url('/img/intro-bg.png');
+    background-image: linear-gradient(#000000ce, #000000ce), url('/img/BG/intro-bg.png');
 }
 
 .devtalles .item {
-    background-image: linear-gradient(#3500afce, #190052ce), url('/img/intro-bg.png');
+    background-image: linear-gradient(#3500afce, #190052ce), url('/img/BG/intro-bg.png');
 }
 
 .logos-lenguajes {
@@ -622,7 +650,7 @@ textarea {
 
 /** CONTACTO **/
 .contacto-bg{
-    background-image: url('/img/Wave.svg');
+    background-image: url('/img/BG/Wave.svg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -638,7 +666,7 @@ textarea {
     padding: 2rem;
     border: solid 1px white;
     width: max(35rem, 100%); /*Utilizar el valor mas pequeño*/
-    background-image:linear-gradient(var(--primario-BG), var(--secundario-BG)), url('/img/intro-bg.png');
+    background-image:linear-gradient(var(--primario-BG), var(--secundario-BG)), url('/img/BG/intro-bg.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -783,7 +811,7 @@ textarea {
 .footer-bg {
     margin: 0;
     color: var(--blanco);
-    background-image: linear-gradient(rgba(15, 47, 143, 1), #000000cb), url('/img/Hexagon2.svg');
+    background-image: linear-gradient(rgba(15, 47, 143, 1), #000000cb), url('/img/BG/Hexagon2.svg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -805,7 +833,7 @@ textarea {
     margin: 0;
     font-size: 1.5rem;
     font-family: Verdana;
-    padding-bottom: 10rem;
+    padding-bottom: 5rem;
 }
 
 .redes-sociales {
