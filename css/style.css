@@ -161,7 +161,7 @@ textarea {
 }
 @media (max-width: 1200px) {
     .boton-ver-mas{
-        width: 30rem;
+        width: 80%;
     }
 }
 
