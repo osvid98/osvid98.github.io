@@ -332,10 +332,24 @@ textarea {
     padding: 0 3rem;
 }
 
-@media (max-width: 1200px) { /** Tablet **/
+@media (max-width: 1200px) {
+    .dos-columnas {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
     .entrada-blog{
         padding-top: 1rem;
         margin-bottom: 5rem;
+        width: 75%;
+    }
+}
+
+@media (max-width: 900px) {
+    .entrada-blog{
+        width: 100%;
     }
 }
 
@@ -347,9 +361,8 @@ textarea {
     }
     
     .entrada-blog {
-        transform: scale(1);  /* Define el tamaño inicial */
-        /* Agrega la propiedad de transición */
-        transition: transform 0.3s ease; /* 0.3 segundos es la duración y "ease" es la función de aceleración */
+        transform: scale(1);  
+        transition: transform 0.3s ease; 
     }
     .entrada-blog:hover {
         cursor: default;
@@ -634,11 +647,11 @@ textarea {
 }
 
 .udemy .item {
-    background-image: linear-gradient(#000000ce, #000000ce), url('/img/BG/intro-bg.png');
+    background-image: linear-gradient(#000000ce, #000000ce), url('/img/BG/intro-bg.webp');
 }
 
 .devtalles .item {
-    background-image: linear-gradient(#3500afce, #190052ce), url('/img/BG/intro-bg.png');
+    background-image: linear-gradient(#3500afce, #190052ce), url('/img/BG/intro-bg.webp');
 }
 
 .logos-lenguajes {
@@ -684,7 +697,7 @@ textarea {
     padding: 2rem;
     border: solid 1px white;
     width: max(35rem, 100%); /*Utilizar el valor mas pequeño*/
-    background-image:linear-gradient(var(--primario-BG), var(--secundario-BG)), url('/img/BG/intro-bg.png');
+    background-image:linear-gradient(var(--primario-BG), var(--secundario-BG)), url('/img/BG/intro-bg.webp');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
