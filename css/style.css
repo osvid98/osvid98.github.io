@@ -22,7 +22,6 @@ html{
     box-sizing: border-box;
     font-size: 62.5%; /* 1 rem = 10px */
     scroll-behavior: smooth;
-    overflow-x: hidden;
 }
 *, *:before, *:after{
     box-sizing: inherit;
@@ -397,6 +396,15 @@ textarea {
 }
 .img-lenguaje {
     width: 20rem;
+}
+@media (max-width: 1200px){
+    .img-lenguaje{
+        display: none;
+    }
+    .experiencia-bg img {
+        max-width: 40%;
+        
+    }
 }
 
 .experiencia-texto {
