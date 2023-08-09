@@ -5,6 +5,11 @@
     <!-- Metas -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="¡Hola, Soy Oscar David!, un estudiante de 21 años de la Escuela Superior de Computo, 
+            donde me encuentro estudiando Ingeniería en Sistemas Computacionales. Actualmente estoy trabajando en un pequeño 
+            intership como Desarrollador Full Stack creando un emocionante proyecto junto a un equipo de 4 personas. 
+            Usando diferentes frameworks como Vue.js y Django.">
+
 
     <!-- CSS -->
     <link rel="stylesheet" href="/css/normalize.css">
@@ -65,14 +70,12 @@
                 <div class="btn-line"></div>
             </div>
             <nav class="menu">
-                <ul>
-                    <img src="/favicon/logo-navbar2.png">
-                    <li><a href="#Proyectos" class="navegacion__enlace">Proyectos</a></li>
-                    <li><a href="#Experiencia" class="navegacion__enlace">Experiencia</a></li>
-                    <li><a href="#Educacion" class="navegacion__enlace">Educación</a></li>
-                    <li><a href="#Certificaciones" class="navegacion__enlace">Certificaciones</a></li>
-                    <li><a href="#Contacto" class="navegacion__enlace">Contacto</a></li>
-                </ul>
+                <img src="/favicon/logo-navbar2.png">
+                <a href="#Proyectos" class="navegacion__enlace">Proyectos</a>
+                <a href="#Experiencia" class="navegacion__enlace">Experiencia</a>
+                <a href="#Educacion" class="navegacion__enlace">Educación</a>
+                <a href="#Certificaciones" class="navegacion__enlace">Certificaciones</a>
+                <a href="#Contacto" class="navegacion__enlace">Contacto</a>
                 <button class="close-btn">X</button>
             </nav>
             <!-- /Menu Hamburguesa -->
@@ -131,7 +134,7 @@
                 <article class="entrada-blog h-reveal">
                     <a href="https://ingresapp.xyz/" target="_blank">
                         <h3>INGRESAPP</h3>
-                        <img src="img/pictures/proyecto-ingresapp.webp">
+                        <img src="img/pictures/proyecto-ingresapp.webp" alt="pryecto1">
                         <h4>Desarrollo Full Stack</h4>
                         <p>Aplicación web de simuladores de exámenes para alumnos a nivel media y superior, diseñada con
                             los
@@ -141,7 +144,7 @@
                         </p>
                     </a>
                 </article>
-                <article class="entrada-blog h-reveal2">
+                <article class="entrada-blog h-reveal2" alt="pryecto2">
                     <a href="/" target="_blank">
                         <h3>Mérito IPN</h3>
                         <img src="img/pictures/proyecto-galardonados.webp">
@@ -151,7 +154,7 @@
                             con <span>HTML, CSS, JS, PHP y el framework del gobierno</span> de la ciudad de México. </p>
                     </a>
                 </article>
-                <article class="entrada-blog h-reveal3">
+                <article class="entrada-blog h-reveal3" alt="pryecto3">
                     <a href="/html/workingProyect.html" target="_blank">
                         <h3>DGS Hidraulica</h3>
                         <img src="img/pictures/proyecto-hidraulica.webp">
@@ -176,7 +179,8 @@
                 <h2 class="h-reveal">Experiencia y Conocimientos</h2>
                 <div class="contenedor-experiencia-img">
                     <img class="img-lenguaje h-reveal" src="/img/logos/experiences/lovoVue.webp" alt="Logo Vue.js">
-                    <img class="img-lenguaje-main h-reveal2" src="/img/logos/experiences/logoIngresapp.webp" alt="Logo INGRESAPP">
+                    <img class="img-lenguaje-main h-reveal2" src="/img/logos/experiences/logoIngresapp.webp"
+                        alt="Logo INGRESAPP">
                     <img class="img-lenguaje h-reveal3" src="/img/logos/experiences/logoDjango.webp" alt="Logo Django">
                 </div>
                 <div class="experiencia-texto h-reveal4">
@@ -306,21 +310,21 @@
                         <article class="entrada-blog h-reveal3">
                             <h3>CECyT 8 "Narciso Bassols"</h3>
                             <h4>Nivel Media Superior <br> INSTITUTO POLITÉCNICO NACIONAL</h4>
-                            <img src="img/logos/shields/escudoCecyt8.webp">
+                            <img src="img/logos/shields/escudoCecyt8.webp" alt="Logo Cecyt8">
                             <h3>Técnico En Computación</h3>
                             <h4>Generación 2017 - 2020</h4>
                         </article>
                         <article class="entrada-blog h-reveal4">
                             <h3>ESC. SUPERIOR DE COMPUTO</h3>
                             <h4>Nivel Superior <br> INSTITUTO POLITÉCNICO NACIONAL</h4>
-                            <img src="img/logos/shields/escudoESCOM.webp">
+                            <img src="img/logos/shields/escudoESCOM.webp" alt="Logo ESCOM">
                             <h3>Ing. Sistemas Computacionales</h3>
                             <h4><u>Generación 2020 - Actual</u></h4>
                         </article>
                         <article class="entrada-blog h-reveal5">
                             <h3>CELEX Lenguas Extranjeras </h3>
                             <h4>Nivel Superior <br> INSTITUTO POLITÉCNICO NACIONAL</h4>
-                            <img src="img/logos/shields/escudoCelex.webp">
+                            <img src="img/logos/shields/escudoCelex.webp" alt="Logo Celex">
                             <h3>LENGUAje INGLES INTERMEDIO B2</h3>
                             <h4>Generación 2020 - 2024</h4>
                         </article>
@@ -332,7 +336,7 @@
         <!-- /EDUCACION -->
 
 
-        
+
         <!-- CERTIFICADOS -->
         <section class="certificados-bg" id="Certificaciones">
             <div class="contenedor-big centrar-texto">
@@ -473,8 +477,7 @@
 
                     </div>
                 </div>
-                <form class="formulario item-contacto h-reveal8" action="https://formspree.io/f/meqbedqn"
-                    method="POST">
+                <form class="formulario item-contacto h-reveal8" action="https://formspree.io/f/meqbedqn" method="POST">
                     <fieldset>
                         <div class="contenedor-campos">
                             <div class="campo">
@@ -494,7 +497,8 @@
 
                             <div class="campo">
                                 <label>Mensaje:</label>
-                                <textarea class="input-text" name="Mensaje"></textarea>
+                                <textarea class="input-text" name="Mensaje" type="textarea"
+                                    placeholder="Envia tu mensaje"></textarea>
                             </div>
                         </div>
                         <div class="alinear-derecha">
@@ -511,10 +515,8 @@
 
     <footer class="footer-bg">
         <div class="centrar-texto h-reveal6">
-            <a href="#top">
-                <img class="footer-logo" src="/favicon/logo-navbar2.png">
-            </a>
-            <h3>Viviendo, aprendiendo & subiendo de nivel<br>un día a la vez.</h3>
+            <img class="footer-logo" src="/favicon/logo-navbar2.png" alt="Logo Personal">
+            <h1>Viviendo, aprendiendo & subiendo de nivel<br>un día a la vez.</h1>
             <div class="redes-sociales">
                 <a href="https://www.linkedin.com/in/osvid-romero-hdz/" target="_blank">
                     <img src="/img/logos/social-networks/red-linkedin.webp" alt="Logo linkedin">

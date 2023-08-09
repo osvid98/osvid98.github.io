@@ -353,7 +353,7 @@ textarea {
     }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1201px) {
     .dos-columnas {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -384,7 +384,7 @@ textarea {
     padding-bottom: 5rem;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1201px) {
     .experiencia-bg {
         position: absolute;
         left: 0;
@@ -426,7 +426,7 @@ textarea {
 
 
 /** Lenguajes **/
-@media (max-width: 1199px){
+@media (max-width: 1200px){
     .contenedor-lenguajes{
         text-align: center;
         margin-top: 8rem;
@@ -444,7 +444,7 @@ textarea {
     }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1201px) {
     .contenedor-lenguajes {
         position: relative;
         z-index: 2;
@@ -853,10 +853,11 @@ textarea {
     width: 15rem;
 }
 
-.footer-bg h3 {
+.footer-bg h1 {
     text-transform: none;
     margin: 0;
     font-size: 2.1rem;
+    font-family: sans-serif;
 }
 
 .footer-bg p {

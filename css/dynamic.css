@@ -93,21 +93,6 @@
     width: 15rem;
 }
   
-.menu ul {
-    list-style: none;
-    padding: 0;
-}
-  
-.menu ul li {
-    padding: 10px 20px;
-}
-  
-.menu ul li a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 18px;
-}
-  
 .menu.active {
     left: 0;
 }
