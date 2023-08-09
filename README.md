@@ -1,4 +1,4 @@
 # osvid98.github.io
 Portafolio Oscar Romero
 
-[Mi Portafolio](osvid98.github.io)
+[Mi Portafolio](https://osvid98.github.io/)
